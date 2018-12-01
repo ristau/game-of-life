@@ -321,7 +321,7 @@
                                     <artifactId>maven-checkstyle-plugin</artifactId>
                                     <version>3.0.1</version>
                                     <!--<configuration>-->
-                                    <!--<configLocation>gol-checkstyle.xml</configLocation>-->
+                                    <configLocation>gol-checkstyle.xml</configLocation>
                                     <!--</configuration>-->
                                 </plugin>
                                 <plugin>
@@ -497,6 +497,15 @@
                         <artifactId>maven-jxr-plugin</artifactId>
                         <version>2.1</version>
                     </plugin>
+		  <plugin>
+		    <groupId>com.atlassian.maven.plugins</groupId>
+		    <artifactId>maven-clover2-plugin</artifactId>
+		    <version>3.0.4</version>
+		    <configuration>
+		    <includesTestSourceRoots>false</includesTestSourceRoots>
+		    <generateXml>true</generateXml>
+		  </plugin> 
+
                 </plugins>
             </reporting>
         </profile>
