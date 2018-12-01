@@ -502,10 +502,10 @@
 		    <artifactId>maven-clover2-plugin</artifactId>
 		    <version>3.0.4</version>
 		    <configuration>
-		    <includesTestSourceRoots>false</includesTestSourceRoots>
-		    <generateXml>true</generateXml>
+		      <includesTestSourceRoots>false</includesTestSourceRoots>
+		      <generateXml>true</generateXml>
+		    </configuration>	
 		  </plugin> 
-
                 </plugins>
             </reporting>
         </profile>
